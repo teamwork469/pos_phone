@@ -19,34 +19,38 @@
       width: 550px;
       margin-left: 274px;
       margin-right: 500px;
+      top: 20px;
+      position: relative;
     }
     #show{
       font-size: 25px;
       text-align: center;
       position: relative;
-      top: 150px;
       width: 550px;
+      top: 128px;
       margin-left: 274px;
       margin-right: 500px;
+      height: 100px;
+      box-shadow: 0px 0px 10px black;
     }
     #btn_start{
       font-family: khmer moul;
       position: relative;
-      top: 355px;
-      left: 300px;
+      top: 350px;
+      left: 389px;
       
     }
     #btn_stop{
       font-family: khmer moul;
       position: relative;
-      top: 355px;
+      top: 350px;
       left: 400px;
     }
     #btn_reset{
       font-family: khmer moul;
       position: relative;
-      top: 355px;
-      left: 466px;
+      top: 350px;
+      left: 411px;
     }
     #phone{
       font-size: 30px;
@@ -55,6 +59,7 @@
       z-index: 1;
       left: 488px;
       font-weight: bold;
+      
     }
     #title{
       text-align: center;
