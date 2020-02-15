@@ -26,6 +26,7 @@
        <img style="height: 629px;width:355px;position: relative;bottom: -86px;left: -65px"  src="<?=base_url("")?>/dist/img/phone_random.png">
        <label id="phone" style="position: absolute;font-size:40px;bottom:50px;bottom: 335px;left:22px;font-weight: bold;animation-delay: 2s;">000000000</label>
 
+
        <button  style="font-size: 15px;font-family:'Khmer OS Battambang';position: absolute;right: 305px;bottom: 118px;" class="btn btn-primary" id="btn_start"><i class="fa fa-pause" aria-hidden="true"></i> ចាប់ផ្ដើម</button>
        <button style="font-size: 15px;font-family:'Khmer OS Battambang';position: relative;right: -71px;bottom: 118px;" class="btn btn-danger" id="btn_stop"><i class="fa fa-play" aria-hidden="true"></i> បញ្ឈប់</button>
        <button style="font-size: 15px;font-family:'Khmer OS Battambang';position: relative;right: -77px;bottom: 118px;" class="btn btn-danger" id="btn_reset"><i class="fa fa-repeat" aria-hidden="true"></i> ឡើងវិញ</button>
@@ -38,6 +39,8 @@
 
 
         <label id="lbl_win"></label>
+
+        <input  style="font-family:'Khmer OS Battambang';position: absolute;top: 20px;width: 467px;text-align: center;font-size: 20px;" type="number" name="txt_insert_phone" class="form-control" id="txt_insert_phone" placeholder="00000000000">
 
     </div>
   </div>
