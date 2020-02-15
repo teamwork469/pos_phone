@@ -16,30 +16,65 @@
       text-align: center;
       font-weight: bold;
       font-size: 25px;
+      width: 550px;
+      margin-left: 274px;
+      margin-right: 500px;
     }
     #show{
       font-size: 25px;
       text-align: center;
       position: relative;
       top: 150px;
+      width: 550px;
+      margin-left: 274px;
+      margin-right: 500px;
+    }
+    #btn_start{
+      font-family: khmer moul;
+      position: relative;
+      top: 355px;
+    }
+    #btn_stop{
+      font-family: khmer moul;
+      position: relative;
+      top: 355px;
+    }
+    #btn_reset{
+      font-family: khmer moul;
+      position: relative;
+      top: 355px;
+    }
+    #phone{
+      font-size: 30px;
+      position: absolute;
+      top: 250px;
+      z-index: 1;
+      left: 488px;
+      font-weight: bold;
+    }
+    #title{
+      text-align: center;
+      font-size: 30px;
+      font-family: khmer moul;
+      color: yellow;
     }
   </style>
 
 </head>
-<body style="margin: 0;background-repeat:no-repeat;padding-right: 500px;padding-left: 500px;background-image: url('<?=base_url('')?>/dist/img/background.png');">
+<body style="margin: 0;background-repeat:no-repeat;background-image: url('<?=base_url('')?>/dist/img/background.png');">
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
        <!-- <img style="height: 629px;width:355px;position: relative;bottom: -86px;left: -65px"  src="<?=base_url("")?>/dist/img/phone_random.png"> -->
-       <label id="phone" >000000000</label>
+       <label id="phone" >000000000</label> 
        <button   class="btn btn-primary" id="btn_start"><i class="fa fa-pause" aria-hidden="true"></i> ចាប់ផ្ដើម</button>
        <button   class="btn btn-danger" id="btn_stop"><i class="fa fa-play" aria-hidden="true"></i> បញ្ឈប់</button>
        <button   class="btn btn-danger" id="btn_reset"><i class="fa fa-repeat" aria-hidden="true"></i> ឡើងវិញ</button>
 
-        <label​>រីករាយជាមួយនឹងការផ្សងសំណាង!</label>
+        <label​ id="title">រីករាយជាមួយនឹងការផ្សងសំណាង!</label>
         <input   type="number" name="txt_insert_phone" class="form-control" id="txt_insert_phone" placeholder="សូមបញ្ចូលលេខទូរសព្ទ" autocomplete="off">
-        <label id="lbl_win"></label>
-        <input disabled type="number" name="show" class="form-control" id="show" placeholder="00000000000">
+        <!-- <label id="lbl_win"></label> -->
+        <input disabled type="number" name="show" class="form-control" id="show">
     </div>
   </div>
 </div>
