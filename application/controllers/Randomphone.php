@@ -39,6 +39,7 @@ class Randomphone extends CI_Controller {
 
     public function reset_selection(){
         $reset_selection = $this->Base_model->run_query("DELETE FROM select_phone");
+        $reset_selection = $this->Base_model->run_query("DELETE FROM mobile_number");
         echo json_encode($reset_selection); 
     }
 
@@ -64,7 +65,7 @@ class Randomphone extends CI_Controller {
 
     public function get_phone_all(){
 
-        $data = $this->Base_model->loadToListJoin("SELECT m.mobile_name FROM mobile_number m WHERE m.`status`=1");
+        $data = $this->Base_model->loadToListJoin("SELECT m.mobile_name FROM mobile_number m WHERE m.`status`=1 DESC");
         echo json_encode($data);
     }
     public function get_phone_select(){
