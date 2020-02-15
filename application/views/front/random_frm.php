@@ -33,16 +33,20 @@
       font-family: khmer moul;
       position: relative;
       top: 355px;
+      left: 300px;
+      
     }
     #btn_stop{
       font-family: khmer moul;
       position: relative;
       top: 355px;
+      left: 400px;
     }
     #btn_reset{
       font-family: khmer moul;
       position: relative;
       top: 355px;
+      left: 466px;
     }
     #phone{
       font-size: 30px;
