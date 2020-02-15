@@ -24,7 +24,7 @@
   <div class="row">
     <div class="col-sm-4">
        <!-- <img style="height: 629px;width:355px;position: relative;bottom: -86px;left: -65px"  src="<?=base_url("")?>/dist/img/phone_random.png"> -->
-       <label id="phone" style="">000000000</label>
+       <!-- <label id="phone" style="">000000000</label> -->
 
 
        <!-- <button  style="font-size: 15px;font-family:'Khmer OS Battambang';position: absolute;right: 305px;bottom: 118px;" class="btn btn-primary" id="btn_start"><i class="fa fa-pause" aria-hidden="true"></i> ចាប់ផ្ដើម</button>
@@ -32,7 +32,7 @@
        <button style="font-size: 15px;font-family:'Khmer OS Battambang';position: relative;right: -77px;bottom: 118px;" class="btn btn-danger" id="btn_reset"><i class="fa fa-repeat" aria-hidden="true"></i> ឡើងវិញ</button> -->
     </div>
     <div class="col-sm-8">
-        <label​ style="text-shadow: 3px 1px 1px black;bottom:555px;left:2px;font-size:28px;color:yellow;position:absolute;font-family:'Khmer OS Muol'">រីករាយជាមួយនឹងការផ្សងសំណាង!</label>
+        <label​ style="position:absolute;font-family:'Khmer OS Muol'">រីករាយជាមួយនឹងការផ្សងសំណាង!</label>
             <input  style="font-family:'Khmer OS Battambang';position: relative;top: 20px;width: 467px;text-align: center;font-size: 20px;" type="number" name="txt_insert_phone" class="form-control" id="txt_insert_phone" placeholder="សូមបញ្ចូលលេខទូរសព្ទ" autocomplete="off">
             <label id="lbl_win"></label>
         <input disabled style="font-family:'Khmer OS Battambang';position: absolute;top: 500px;width: 467px;text-align: center;font-size: 20px;" type="number" name="show" class="form-control" id="show" placeholder="00000000000">
