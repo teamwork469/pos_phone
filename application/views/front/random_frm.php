@@ -37,7 +37,6 @@
 
             <input  style="font-family:'Khmer OS Battambang';position: relative;top: 20px;width: 467px;text-align: center;font-size: 20px;" type="number" name="txt_insert_phone" class="form-control" id="txt_insert_phone" placeholder="សូមបញ្ចូលលេខទូរសព្ទ" autocomplete="off">
 
-
         <label id="lbl_win"></label>
 
         <input disabled style="font-family:'Khmer OS Battambang';position: absolute;top: 500px;width: 467px;text-align: center;font-size: 20px;" type="number" name="show" class="form-control" id="show" placeholder="00000000000">
