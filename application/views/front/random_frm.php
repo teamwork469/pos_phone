@@ -71,11 +71,47 @@
     top: 20px;
     }
     #win1{
-      position: relative;
+    position: absolute;
     top: 466px;
     width: 180px;
     text-align: center;
     font-weight: bold;
+  
+    }
+    #win2{
+    position: absolute;
+    top: 466px;
+    width: 180px;
+    text-align: center;
+    font-weight: bold;
+    left:-60px;
+  
+    }
+    #win3{
+    position: absolute;
+    top: 466px;
+    width: 180px;
+    text-align: center;
+    font-weight: bold;
+    left:172px;
+  
+    }
+    #win4{
+    position: absolute;
+    top: 466px;
+    width: 180px;
+    text-align: center;
+    font-weight: bold;
+    left:393px;
+  
+    }
+    #win5{
+    position: absolute;
+    top: 466px;
+    width: 180px;
+    text-align: center;
+    font-weight: bold;
+    left:609px;
     }
   </style>
 
@@ -95,7 +131,11 @@
         <!-- <label id="lbl_win"></label> -->
         <input disabled type="number" name="show" class="form-control" id="show">
 
-        <input   type="number" name="win1" class="form-control" id="win1" placeholder="សូមបញ្ចូលលេខទូរសព្ទ" autocomplete="off">
+        <input disabled  type="number" name="win1" class="form-control" id="win1" placeholder="000000000" autocomplete="off">
+        <input disabled  type="number" name="win2" class="form-control" id="win2" placeholder="000000000" autocomplete="off">
+        <input disabled  type="number" name="win3" class="form-control" id="win3" placeholder="000000000" autocomplete="off">
+        <input disabled  type="number" name="win4" class="form-control" id="win4" placeholder="000000000" autocomplete="off">
+        <input disabled  type="number" name="win5" class="form-control" id="win5" placeholder="000000000" autocomplete="off">
     </div>
   </div>
 </div>
