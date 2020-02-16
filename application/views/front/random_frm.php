@@ -53,7 +53,6 @@
       left: 411px;
     }
     #phone{
-      #phone {
     font-size: 60px;
     position: absolute;
     top: 226px;
