@@ -37,21 +37,24 @@
     #btn_start{
       font-family: khmer moul;
       position: relative;
-      top: 200px;
+      top: 220px;
       left: 389px;
+      z-index: 1;
       
     }
     #btn_stop{
       font-family: khmer moul;
       position: relative;
-      top: 200px;
+      top: 220px;
       left: 400px;
+      z-index: 1;
     }
     #btn_reset{
       font-family: khmer moul;
       position: relative;
-      top: 200px;
+      top: 220px;
       left: 411px;
+      z-index: 1;
     }
     #phone{
       font-size: 60px;
@@ -77,6 +80,7 @@
     width: 180px;
     text-align: center;
     font-weight: bold;
+    box-shadow: 0px 0px 0px 2px #007bff;
   
     }
     #win2{
@@ -86,6 +90,7 @@
     text-align: center;
     font-weight: bold;
     left: 205px;
+    box-shadow: 0px 0px 0px 2px #007bff;
   
     }
     #win3{
@@ -95,6 +100,7 @@
     text-align: center;
     font-weight: bold;
     left: 411px;
+    box-shadow: 0px 0px 0px 2px #007bff;
   
     }
     #win4{
@@ -104,6 +110,7 @@
     text-align: center;
     font-weight: bold;
     left: 624px;
+    box-shadow: 0px 0px 0px 2px #007bff;
   
     }
     #win5{
@@ -113,6 +120,7 @@
     text-align: center;
     font-weight: bold;
     left: 839px;
+    box-shadow: 0px 0px 0px 2px #007bff;
     }
   </style>
 
@@ -166,11 +174,11 @@
                        <label style="font-family:'Khmer OS Battambang';">លេខ: <star style="color: red">*</star></label>
                        <!-- <input required style="font-family:'Khmer OS Battambang';"​ type="number" name="txt_no" id="txt_no" placeholder="សូមបញ្ចូលលេខ" class="form-control"> -->
                        <select class="form-control" name="txt_no" id="txt_no">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
                             <option value="5">5</option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                            <option value="2">2</option>
+                            <option value="1">1</option>
                        </select>
                   </div>
           
