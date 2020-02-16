@@ -13,14 +13,15 @@
   <style type="text/css">
     #txt_insert_phone{
       font-family: khmer moul;
-      text-align: center;
-      font-weight: bold;
-      font-size: 25px;
-      width: 550px;
-      margin-left: 274px;
-      margin-right: 500px;
-      top: 20px;
-      position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    width: 550px;
+    margin-left: 276px;
+    margin-right: 500px;
+    top: 20px;
+    position: relative;
+    width: 229px;
     }
     #show{
       font-size: 25px;
@@ -53,9 +54,9 @@
       left: 411px;
     }
     #phone{
-    font-size: 60px;
+      font-size: 60px;
     position: absolute;
-    top: 226px;
+    top: 235px;
     z-index: 1;
     left: 407px;
     font-weight: bold;
@@ -63,9 +64,11 @@
     }
     #title{
       text-align: center;
-      font-size: 30px;
-      font-family: khmer moul;
-      color: yellow;
+    font-size: 30px;
+    font-family: khmer moul;
+    color: yellow;
+    position: relative;
+    top: 20px;
     }
   </style>
 
