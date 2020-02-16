@@ -28,7 +28,7 @@
       text-align: center;
       position: relative;
       width: 550px;
-      top: 40px;
+      top: 30px;
       margin-left: 274px;
       margin-right: 500px;
       height: 100px;
@@ -37,26 +37,26 @@
     #btn_start{
       font-family: khmer moul;
       position: relative;
-      top: 225px;
+      top: 200px;
       left: 389px;
       
     }
     #btn_stop{
       font-family: khmer moul;
       position: relative;
-      top: 225px;
+      top: 200px;
       left: 400px;
     }
     #btn_reset{
       font-family: khmer moul;
       position: relative;
-      top: 225px;
+      top: 200px;
       left: 411px;
     }
     #phone{
       font-size: 60px;
     position: absolute;
-    top: 110px;
+    top: 100px;
     z-index: 1;
     left: 407px;
     font-weight: bold;
@@ -64,7 +64,7 @@
     }
     #title{
       text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     font-family: "Khmer Mool";
     color: yellow;
     position: relative;
@@ -73,7 +73,7 @@
     }
     #win1{
     position: absolute;
-    top: 348px;
+    top: 269px;
     width: 180px;
     text-align: center;
     font-weight: bold;
@@ -81,7 +81,7 @@
     }
     #win2{
     position: absolute;
-    top: 348px;
+    top: 269px;
     width: 180px;
     text-align: center;
     font-weight: bold;
@@ -90,7 +90,7 @@
     }
     #win3{
     position: absolute;
-    top: 348px;
+    top: 269px;
     width: 180px;
     text-align: center;
     font-weight: bold;
@@ -99,7 +99,7 @@
     }
     #win4{
     position: absolute;
-    top: 348px;
+    top: 269px;
     width: 180px;
     text-align: center;
     font-weight: bold;
@@ -108,7 +108,7 @@
     }
     #win5{
     position: absolute;
-    top: 348px;
+    top: 269px;
     width: 180px;
     text-align: center;
     font-weight: bold;
@@ -127,7 +127,7 @@
        <button   class="btn btn-danger" id="btn_stop"><i class="fa fa-play" aria-hidden="true"></i> បញ្ឈប់</button>
        <button   class="btn btn-danger" id="btn_reset"><i class="fa fa-repeat" aria-hidden="true"></i> ឡើងវិញ</button>
 
-        <label​ id="title">ការចាប់រង្វាន់ ចាប់រង្វាន់ដីឡូត៏ិ សុខ ផល្លា!</label>
+        <label​ id="title">ការចាប់រង្វាន់ ដីឡូត៏ិ សុខ ផល្លា!</label>
         <input hidden  type="number" name="txt_insert_phone" class="form-control" id="txt_insert_phone" placeholder="សូមបញ្ចូលលេខទូរសព្ទ" autocomplete="off">
         <!-- <label id="lbl_win"></label> -->
         <input disabled type="number" name="show" class="form-control" id="show">
