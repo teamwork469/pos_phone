@@ -56,7 +56,7 @@
     #phone{
       font-size: 60px;
     position: absolute;
-    top: 100px;
+    top: 111px;
     z-index: 1;
     left: 407px;
     font-weight: bold;
