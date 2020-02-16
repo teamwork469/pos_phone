@@ -72,7 +72,7 @@
     text-shadow: 0px 0px 5px black;
     }
     #win1{
-    position: absolute;
+    position: relative;
     top: 269px;
     width: 180px;
     text-align: center;
@@ -80,39 +80,39 @@
   
     }
     #win2{
-    position: absolute;
-    top: 269px;
+    position: relative;
+    top: 231px;
     width: 180px;
     text-align: center;
     font-weight: bold;
-    left:-60px;
+    left: 205px;
   
     }
     #win3{
-    position: absolute;
-    top: 269px;
+    position: relative;
+    top: 192px;
     width: 180px;
     text-align: center;
     font-weight: bold;
-    left:172px;
+    left: 411px;
   
     }
     #win4{
-    position: absolute;
-    top: 269px;
+    position: relative;
+    top: 154px;
     width: 180px;
     text-align: center;
     font-weight: bold;
-    left:393px;
+    left: 624px;
   
     }
     #win5{
-    position: absolute;
-    top: 269px;
+      position: relative;
+    top: 116px;
     width: 180px;
     text-align: center;
     font-weight: bold;
-    left:609px;
+    left: 839px;
     }
   </style>
 
@@ -164,7 +164,14 @@
 
                    <div class="form-group">
                        <label style="font-family:'Khmer OS Battambang';">លេខ: <star style="color: red">*</star></label>
-                       <input required style="font-family:'Khmer OS Battambang';"​ type="number" name="txt_no" id="txt_no" placeholder="សូមបញ្ចូលលេខ" class="form-control">
+                       <!-- <input required style="font-family:'Khmer OS Battambang';"​ type="number" name="txt_no" id="txt_no" placeholder="សូមបញ្ចូលលេខ" class="form-control"> -->
+                       <select class="form-control" name="txt_no" id="txt_no">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                       </select>
                   </div>
           
         </div>
@@ -221,7 +228,7 @@
         });
 
         function list_winer(e){
-                  $("#lbl_win").html("");
+
                   $.ajax({
                     type:"post",
                     url: "<?=site_url('Randomphone/list_winer')?>",
@@ -244,6 +251,7 @@
                                }
                                if(count==5){
                                   $("#win5").val(value.mobile_winer);
+                                 
                                }
                               //  $("#lbl_win").append('អ្នកឈ្នះទី'+count+': '+value.mobile_winer+'</br>');
                           });
