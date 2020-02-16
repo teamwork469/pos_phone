@@ -65,10 +65,11 @@
     #title{
       text-align: center;
     font-size: 30px;
-    font-family:"Khmer Mool";
+    font-family: "Khmer Mool";
     color: yellow;
     position: relative;
     top: 20px;
+    text-shadow: 0px 0px 5px black;
     }
     #win1{
     position: absolute;
