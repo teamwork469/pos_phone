@@ -231,9 +231,21 @@
                           $.each(json, function( index, value ) {
                                var count = index+1;
                                if(count==1){
-
+                                  $("#win1").val(value.mobile_winer);
                                }
-                               $("#lbl_win").append('អ្នកឈ្នះទី'+count+': '+value.mobile_winer+'</br>');
+                               if(count==2){
+                                  $("#win2").val(value.mobile_winer);
+                               }
+                               if(count==3){
+                                  $("#win3").val(value.mobile_winer);
+                               }
+                               if(count==4){
+                                  $("#win4").val(value.mobile_winer);
+                               }
+                               if(count==5){
+                                  $("#win5").val(value.mobile_winer);
+                               }
+                              //  $("#lbl_win").append('អ្នកឈ្នះទី'+count+': '+value.mobile_winer+'</br>');
                           });
                         }
               });
