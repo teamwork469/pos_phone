@@ -85,7 +85,7 @@
     }
     #win2{
     position: relative;
-    top: 231px;
+    top: 186px;
     width: 180px;
     text-align: center;
     font-weight: bold;
@@ -96,7 +96,7 @@
     }
     #win3{
     position: relative;
-    top: 192px;
+    top: 143px;
     width: 180px;
     text-align: center;
     font-weight: bold;
@@ -118,11 +118,11 @@
     }
     #win5{
     position: relative;
-    top: 116px;
+    top: 101px;
     width: 180px;
     text-align: center;
     font-weight: bold;
-    left: 839px;
+    left: 834px;
     box-shadow: 0px 0px 0px 2px #007bff;
     font-size: 20px;
     }
