@@ -53,11 +53,12 @@
       left: 411px;
     }
     #phone{
-      font-size: 45px;
+      #phone {
+    font-size: 60px;
     position: absolute;
-    top: 240px;
+    top: 226px;
     z-index: 1;
-    left: 447px;
+    left: 407px;
     font-weight: bold;
       
     }
