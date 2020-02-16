@@ -230,6 +230,9 @@
                           var json = JSON.parse(res);
                           $.each(json, function( index, value ) {
                                var count = index+1;
+                               if(count==1){
+
+                               }
                                $("#lbl_win").append('អ្នកឈ្នះទី'+count+': '+value.mobile_winer+'</br>');
                           });
                         }
