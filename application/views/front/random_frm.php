@@ -70,6 +70,13 @@
     position: relative;
     top: 20px;
     }
+    #win1{
+      position: relative;
+    top: 466px;
+    width: 180px;
+    text-align: center;
+    font-weight: bold;
+    }
   </style>
 
 </head>
@@ -87,6 +94,8 @@
         <input   type="number" name="txt_insert_phone" class="form-control" id="txt_insert_phone" placeholder="សូមបញ្ចូលលេខទូរសព្ទ" autocomplete="off">
         <!-- <label id="lbl_win"></label> -->
         <input disabled type="number" name="show" class="form-control" id="show">
+
+        <input   type="number" name="win1" class="form-control" id="win1" placeholder="សូមបញ្ចូលលេខទូរសព្ទ" autocomplete="off">
     </div>
   </div>
 </div>
