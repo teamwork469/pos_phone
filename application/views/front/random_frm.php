@@ -81,7 +81,7 @@
     text-align: center;
     font-weight: bold;
     box-shadow: 0px 0px 0px 2px #007bff;
-    font-size: 20px;
+    font-size: 18px;
     }
     #win2{
     position: relative;
@@ -91,7 +91,7 @@
     font-weight: bold;
     left: 205px;
     box-shadow: 0px 0px 0px 2px #007bff;
-    font-size: 20px;
+    font-size: 18px;
   
     }
     #win3{
@@ -102,7 +102,7 @@
     font-weight: bold;
     left: 411px;
     box-shadow: 0px 0px 0px 2px #007bff;
-    font-size: 20px;
+    font-size: 18px;
   
     }
     #win4{
@@ -113,7 +113,7 @@
     font-weight: bold;
     left: 624px;
     box-shadow: 0px 0px 0px 2px #007bff;
-    font-size: 20px;
+    font-size: 18px;
   
     }
     #win5{
@@ -124,7 +124,7 @@
     font-weight: bold;
     left: 839px;
     box-shadow: 0px 0px 0px 2px #007bff;
-    font-size: 20px;
+    font-size: 18px;
     }
   </style>
 
@@ -250,19 +250,19 @@
                           $.each(json, function( index, value ) {
                                var count = index+1;
                                if(count==1){
-                                  $("#win1").val(count+'.'+value.mobile_winer);
+                                  $("#win1").val(value.mobile_winer);
                                }
                                if(count==2){
-                                  $("#win2").val(count+'.'+value.mobile_winer);
+                                  $("#win2").val(value.mobile_winer);
                                }
                                if(count==3){
-                                  $("#win3").val(count+'.'+value.mobile_winer);
+                                  $("#win3").val(value.mobile_winer);
                                }
                                if(count==4){
-                                  $("#win4").val(count+'.'+value.mobile_winer);
+                                  $("#win4").val(value.mobile_winer);
                                }
                                if(count==5){
-                                  $("#win5").val(count+'.'+value.mobile_winer);
+                                  $("#win5").val(value.mobile_winer);
                                  
                                }
                               //  $("#lbl_win").append('អ្នកឈ្នះទី'+count+': '+value.mobile_winer+'</br>');
