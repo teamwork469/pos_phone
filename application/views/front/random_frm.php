@@ -6,9 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="<?=base_url('')?>dist/css/font-awesome.min.css">
+  <link rel="stylesheet" href="<?=base_url('')?>dist/css/font-awesome.min.css">
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 
   <style type="text/css">
     #txt_insert_phone{
@@ -28,7 +32,7 @@
       text-align: center;
       position: relative;
       width: 550px;
-      top: 30px;
+      top: 100px;
       margin-left: 274px;
       margin-right: 500px;
       height: 100px;
@@ -37,29 +41,33 @@
     #btn_start{
       font-family: khmer moul;
       position: relative;
-      top: 220px;
+      top: 290px;
       left: 389px;
       z-index: 1;
+      height: 50px;
+      
       
     }
     #btn_stop{
       font-family: khmer moul;
       position: relative;
-      top: 220px;
+      top: 290px;
       left: 400px;
       z-index: 1;
+      height: 50px;
     }
     #btn_reset{
       font-family: khmer moul;
       position: relative;
-      top: 220px;
+      top: 290px;
       left: 411px;
       z-index: 1;
+      height: 50px;
     }
     #phone{
       font-size: 60px;
     position: absolute;
-    top: 111px;
+    top: 188px;
     z-index: 1;
     left: 407px;
     font-weight: bold;
@@ -77,59 +85,89 @@
     #win1{
     position: relative;
     top: 277px;
-    width: 180px;
+    width: 240px;
     text-align: center;
     font-weight: bold;
-    box-shadow: 0px 0px 0px 2px #007bff;
-    font-size: 18px;
+    box-shadow: 0px 0px 0px 2px #bd2130;
+    font-size: 30px;
+    left:-60px;
+    font-family: sans-serif;
     }
     #win2{
     position: relative;
-    top: 232px;
-    width: 180px;
+    top: 218px;
+    width: 240px;
     text-align: center;
     font-weight: bold;
     left: 205px;
-    box-shadow: 0px 0px 0px 2px #007bff;
-    font-size: 18px;
+    box-shadow: 0px 0px 0px 2px #bd2130;
+    font-size: 30px;
+    font-family: sans-serif;
   
     }
     #win3{
     position: relative;
-    top: 186px;
-    width: 180px;
+    top: 158px;
+    width: 240px;
     text-align: center;
     font-weight: bold;
-    left: 411px;
-    box-shadow: 0px 0px 0px 2px #007bff;
-    font-size: 18px;
+    left: 467px;
+    box-shadow: 0px 0px 0px 2px #bd2130;
+    font-size: 30px;
+    font-family: sans-serif;
   
     }
     #win4{
     position: relative;
-    top: 143px;
-    width: 180px;
+    top: 99px;
+    width: 240px;
     text-align: center;
     font-weight: bold;
-    left: 624px;
-    box-shadow: 0px 0px 0px 2px #007bff;
-    font-size: 18px;
+    left: 728px;
+    box-shadow: 0px 0px 0px 2px #bd2130;
+    font-size: 30px;
+    font-family: sans-serif;
   
     }
     #win5{
     position: relative;
-    top: 101px;
-    width: 180px;
+    top: 40px;
+    width: 240px;
     text-align: center;
     font-weight: bold;
-    left: 839px;
-    box-shadow: 0px 0px 0px 2px #007bff;
-    font-size: 18px;
+    left: 988px;
+    box-shadow: 0px 0px 0px 2px #bd2130;
+    font-size: 30px;
+    font-family: sans-serif;
     }
+
+    /* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('<?=base_url()?>dist/img/Preloader_11.gif') center no-repeat #fff;
+}
   </style>
 
 </head>
 <body style="margin: 0;background-repeat:no-repeat;background-image: url('<?=base_url('')?>/dist/img/background.png');">
+<div class="se-pre-con"></div>
+<script>
+//paste this code under the head tag or in a separate js file.
+	// Wait for window load
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+</script>
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
@@ -166,10 +204,10 @@
         <div class="modal-body">
                   <div class="form-group">
                        <label​ style="font-family:'Khmer OS Battambang';">លេខទូរសព្ទ : <star style="color: red">*</star></label>
-                       
                        <select style="font-family:'Khmer OS Battambang';" class="form-control" id="ch_select">
+                       
                         <?php foreach ($rd as $key => $v) { ?>
-                        <option value="<?=$v->mobie_id?>"><?=$v->mobile_name?></option>
+                        <option value="<?=$v->mobile_id?>"><?=$key+1?><?=" - ".$v->mobile_name?></option>
                         <?php } ?>
                        </select>
                   </div>
@@ -177,6 +215,7 @@
                    <div class="form-group">
                        <label style="font-family:'Khmer OS Battambang';">លេខ: <star style="color: red">*</star></label>
                        <!-- <input required style="font-family:'Khmer OS Battambang';"​ type="number" name="txt_no" id="txt_no" placeholder="សូមបញ្ចូលលេខ" class="form-control"> -->
+                      
                        <select class="form-control" name="txt_no" id="txt_no">
                             <option value="5">5</option>
                             <option value="4">4</option>
@@ -230,17 +269,11 @@
         
         $("#btn_reset").on('click',function(e){
            e.preventDefault();
-                $.ajax({
-                    type:"post",
-                    url: "<?=site_url('Randomphone/reset_selection')?>",
-                    success: function(res){
-                       window.location.reload();
-                    }
-              });
+           $('#phone').text('000000000');
+           list_winer();
         });
 
         function list_winer(e){
-
                   $.ajax({
                     type:"post",
                     url: "<?=site_url('Randomphone/list_winer')?>",
@@ -270,27 +303,6 @@
                         }
               });
         }
-
-        $('#txt_insert_phone').keyup(function(e){
-          var phone_number = $("#txt_insert_phone").val();
-              if(e.keyCode == 13){
-               e.preventDefault();
-               $.ajax({
-                  type:"post",
-                  data:{'phone_number':phone_number},
-                  url: "<?=site_url('Randomphone/insert_select_phone')?>",
-                  success: function(res){
-                      var json = JSON.parse(res);
-                      $("#txt_insert_phone").focus();
-                      window.location.reload();
-
-                  }
-
-                });
-
-             }
-          
-        });
 
         $("#btn_start").on('click',function(){
           generateNumber(0);
@@ -388,6 +400,11 @@
               if (e.keyCode == 76) {
                   e.preventDefault();
                    window.open("<?=site_url('Userlogin')?>","_self");
+               }
+
+               if (e.keyCode == 65) {
+                  e.preventDefault();
+                  window.open("<?=site_url('Page')?>","_self");
                }
 
           });

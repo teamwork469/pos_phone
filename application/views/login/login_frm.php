@@ -21,6 +21,21 @@
 <script src="<?=base_url('')?>/plugins/jquery/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
+<style>
+.btn-primary {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+    box-shadow: none;
+}
+.btn-primary:hover{
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+    box-shadow: none;
+}
+</style>
+
 </head>
 <body class="hold-transition login-page" style="background-image: url('<?=base_url('')?>/dist/img/backround.jpg');">
 <div class="login-box">
