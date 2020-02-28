@@ -27,6 +27,7 @@
     position: relative;
     width: 229px;
     }
+
     #show{
       font-size: 25px;
       text-align: center;
@@ -90,7 +91,7 @@
     font-weight: bold;
     box-shadow: 0px 0px 0px 2px #bd2130;
     font-size: 30px;
-    left:-60px;
+    left:-90px;
     font-family: sans-serif;
     }
     #win2{
@@ -99,7 +100,7 @@
     width: 240px;
     text-align: center;
     font-weight: bold;
-    left: 205px;
+    left: 170px;
     box-shadow: 0px 0px 0px 2px #bd2130;
     font-size: 30px;
     font-family: sans-serif;
@@ -111,7 +112,7 @@
     width: 240px;
     text-align: center;
     font-weight: bold;
-    left: 467px;
+    left: 432px;
     box-shadow: 0px 0px 0px 2px #bd2130;
     font-size: 30px;
     font-family: sans-serif;
@@ -123,7 +124,7 @@
     width: 240px;
     text-align: center;
     font-weight: bold;
-    left: 728px;
+    left: 694px;
     box-shadow: 0px 0px 0px 2px #bd2130;
     font-size: 30px;
     font-family: sans-serif;
@@ -135,7 +136,7 @@
     width: 240px;
     text-align: center;
     font-weight: bold;
-    left: 988px;
+    left: 956px;
     box-shadow: 0px 0px 0px 2px #bd2130;
     font-size: 30px;
     font-family: sans-serif;
@@ -154,6 +155,31 @@ if it's not present, don't show loader */
 	height: 100%;
 	z-index: 9999;
 	background: url('<?=base_url()?>dist/img/Preloader_11.gif') center no-repeat #fff;
+}
+#lbl_win1{
+    position: relative;
+    top: 272px;
+    left: -35px;
+}
+#lbl_win2{
+    position: relative;
+    top: 272px;
+    left: 68px;
+}
+#lbl_win3{
+    position: relative;
+    top: 272px;
+    left: 159px;
+}
+#lbl_win4{
+    position: relative;
+    top: 272px;
+    left: 261px;
+}
+#lbl_win5{
+    position: relative;
+    top: 272px;
+    left: 365px;
 }
   </style>
 
@@ -177,10 +203,16 @@ if it's not present, don't show loader */
        <button   class="btn btn-danger" id="btn_stop"><i class="fa fa-play" aria-hidden="true"></i> បញ្ឈប់</button>
        <button   class="btn btn-danger" id="btn_reset"><i class="fa fa-repeat" aria-hidden="true"></i> ឡើងវិញ</button>
 
-        <label​ id="title">ការចាប់រង្វាន់ បិទដីឡូត៏ិ សុ៊ក ផល្លា!</label>
+        <label​ id="title">ការចាប់រង្វាន់ បិទដីឡូត៍ សុ៊ក ផល្លា!</label>
         <input hidden  type="number" name="txt_insert_phone" class="form-control" id="txt_insert_phone" placeholder="សូមបញ្ចូលលេខទូរសព្ទ" autocomplete="off">
         <!-- <label id="lbl_win"></label> -->
         <input disabled type="number" name="show" class="form-control" id="show">
+
+        <label id="lbl_win1" for="lbl_win1"></label>
+        <label id="lbl_win2" for="lbl_win1"></label>
+        <label id="lbl_win3" for="lbl_win1"></label>
+        <label id="lbl_win4" for="lbl_win1"></label>
+        <label id="lbl_win5" for="lbl_win1"></label>
 
         <input disabled  type="number" name="win1" class="form-control" id="win1" placeholder="000000000" autocomplete="off">
         <input disabled  type="number" name="win2" class="form-control" id="win2" placeholder="000000000" autocomplete="off">
@@ -284,18 +316,23 @@ if it's not present, don't show loader */
                                var count = index+1;
                                if(count==1){
                                   $("#win1").val(value.mobile_winer);
+                                  $('#lbl_win1').text('រង្វាន់ទី៥');
                                }
                                if(count==2){
                                   $("#win2").val(value.mobile_winer);
+                                  $('#lbl_win2').text('រង្វាន់ទី៤');
                                }
                                if(count==3){
                                   $("#win3").val(value.mobile_winer);
+                                  $('#lbl_win3').text('រង្វាន់ទី៣');
                                }
                                if(count==4){
                                   $("#win4").val(value.mobile_winer);
+                                  $('#lbl_win4').text('រង្វាន់ទី២');
                                }
                                if(count==5){
                                   $("#win5").val(value.mobile_winer);
+                                  $('#lbl_win5').text('រង្វាន់ទី១');ស
                                  
                                }
                               //  $("#lbl_win").append('អ្នកឈ្នះទី'+count+': '+value.mobile_winer+'</br>');
