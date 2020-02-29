@@ -101,7 +101,7 @@ class Randomphone extends CI_Controller {
 FROM select_phone sp WHERE 
 pos_random_phone.sp.`status`=1 AND pos_random_phone.sp.`no` = (SELECT  MAX(`no`)  FROM select_phone s WHERE  pos_random_phone.s.`status`=1)
 GROUP BY select_id");
-        echo json_encode($data);
+echo json_encode($data);
     }
 
     public function update_phone_select(){
