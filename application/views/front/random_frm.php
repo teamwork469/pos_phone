@@ -158,7 +158,7 @@ if it's not present, don't show loader */
 #lbl_win1{
     position: relative;
     top: 272px;
-    left: -35px;
+    left: -41px;
 }
 #lbl_win2{
     position: relative;
@@ -183,7 +183,7 @@ if it's not present, don't show loader */
   </style>
 
 </head>
-<body style="margin: 0;background-repeat:no-repeat;background-image: url('<?=base_url('')?>/dist/img/background.png');">
+<body style="margin: 0;background-repeat:no-repeat;background-image: url('<?=base_url('')?>/dist/img/background.jpg');">
 <div class="se-pre-con"></div>
 <script>
 //paste this code under the head tag or in a separate js file.
@@ -202,16 +202,16 @@ if it's not present, don't show loader */
        <button   class="btn btn-danger" id="btn_stop"><i class="fa fa-play" aria-hidden="true"></i> បញ្ឈប់</button>
        <button   class="btn btn-danger" id="btn_reset"><i class="fa fa-repeat" aria-hidden="true"></i> ឡើងវិញ</button>
 
-        <label​ id="title">ការចាប់រង្វាន់ បិទដីឡូត៍ សុ៊ក ផល្លា</label>
+        <label​  id="title"></label>
         <input hidden  type="number" name="txt_insert_phone" class="form-control" id="txt_insert_phone" placeholder="សូមបញ្ចូលលេខទូរសព្ទ" autocomplete="off">
         <!-- <label id="lbl_win"></label> -->
         <input disabled type="number" name="show" class="form-control" id="show">
 
-        <label id="lbl_win1" for="lbl_win1"></label>
-        <label id="lbl_win2" for="lbl_win1"></label>
-        <label id="lbl_win3" for="lbl_win1"></label>
-        <label id="lbl_win4" for="lbl_win1"></label>
-        <label id="lbl_win5" for="lbl_win1"></label>
+        <label id="lbl_win1" for="lbl_win1">រង្វាន់ទី៥</label>
+        <label id="lbl_win2" for="lbl_win1">រង្វាន់ទី៤</label>
+        <label id="lbl_win3" for="lbl_win1">រង្វាន់ទី៣</label>
+        <label id="lbl_win4" for="lbl_win1">រង្វាន់ទី២</label>
+        <label id="lbl_win5" for="lbl_win1">រង្វាន់ទី១</label>
 
         <input disabled  type="number" name="win1" class="form-control" id="win1" placeholder="000000000" autocomplete="off">
         <input disabled  type="number" name="win2" class="form-control" id="win2" placeholder="000000000" autocomplete="off">
@@ -315,23 +315,23 @@ if it's not present, don't show loader */
                                var count = index+1;
                                if(count==1){
                                   $("#win1").val(value.mobile_winer);
-                                  $('#lbl_win1').text('រង្វាន់ទី៥');
+                                  
                                }
                                if(count==2){
                                   $("#win2").val(value.mobile_winer);
-                                  $('#lbl_win2').text('រង្វាន់ទី៤');
+                                  
                                }
                                if(count==3){
                                   $("#win3").val(value.mobile_winer);
-                                  $('#lbl_win3').text('រង្វាន់ទី៣');
+                                  
                                }
                                if(count==4){
                                   $("#win4").val(value.mobile_winer);
-                                  $('#lbl_win4').text('រង្វាន់ទី២');
+                                  
                                }
                                if(count==5){
                                   $("#win5").val(value.mobile_winer);
-                                  $('#lbl_win5').text('រង្វាន់ទី១');
+                                  
                                  
                                }
                               //  $("#lbl_win").append('អ្នកឈ្នះទី'+count+': '+value.mobile_winer+'</br>');
