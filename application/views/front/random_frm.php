@@ -203,7 +203,7 @@ if it's not present, don't show loader */
        <button   class="btn btn-danger" id="btn_stop"><i class="fa fa-play" aria-hidden="true"></i> បញ្ឈប់</button>
        <button   class="btn btn-danger" id="btn_reset"><i class="fa fa-repeat" aria-hidden="true"></i> ឡើងវិញ</button>
 
-        <label​ id="title">ការចាប់រង្វាន់ បិទដីឡូត៍ សុ៊ក ផល្លា!</label>
+        <label​ id="title">ការចាប់រង្វាន់ បិទដីឡូត៍ សុ៊ក ផល្លា</label>
         <input hidden  type="number" name="txt_insert_phone" class="form-control" id="txt_insert_phone" placeholder="សូមបញ្ចូលលេខទូរសព្ទ" autocomplete="off">
         <!-- <label id="lbl_win"></label> -->
         <input disabled type="number" name="show" class="form-control" id="show">
@@ -332,7 +332,7 @@ if it's not present, don't show loader */
                                }
                                if(count==5){
                                   $("#win5").val(value.mobile_winer);
-                                  $('#lbl_win5').text('រង្វាន់ទី១');ស
+                                  $('#lbl_win5').text('រង្វាន់ទី១');
                                  
                                }
                               //  $("#lbl_win").append('អ្នកឈ្នះទី'+count+': '+value.mobile_winer+'</br>');
