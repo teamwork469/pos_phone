@@ -96,8 +96,11 @@ class Randomphone extends CI_Controller {
         echo json_encode($data);
     }
     public function get_phone_select(){
-         $data = $this->Base_model->loadToListJoin("SELECT  COUNT(sp.select_id) AS count_select,(SELECT mb.mobile_name FROM mobile_number mb WHERE mb.mobile_id = sp.mobile_id)AS mobile
-         FROM select_phone sp WHERE sp.`status`=1 AND sp.`no` = (SELECT  MAX(`no`)  FROM select_phone s WHERE  s.`status`=1)");
+         $data = $this->Base_model->loadToListJoin("SELECT  COUNT(sp.select_id) AS count_select,
+(SELECT pos_random_phone.mb.mobile_name FROM mobile_number mb WHERE mb.mobile_id = pos_random_phone.sp.mobile_id)AS mobile
+FROM select_phone sp WHERE 
+pos_random_phone.sp.`status`=1 AND pos_random_phone.sp.`no` = (SELECT  MAX(`no`)  FROM select_phone s WHERE  pos_random_phone.s.`status`=1)
+GROUP BY select_id");
         echo json_encode($data);
     }
 
