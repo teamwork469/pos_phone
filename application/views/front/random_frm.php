@@ -33,7 +33,7 @@
       text-align: center;
       position: relative;
       width: 550px;
-      top: 100px;
+      top: 182px;
       margin-left: 274px;
       margin-right: 500px;
       height: 100px;
@@ -42,7 +42,7 @@
     #btn_start{
       font-family: khmer moul;
       position: relative;
-      top: 290px;
+      top: 380px;
       left: 389px;
       z-index: 1;
       height: 50px;
@@ -52,7 +52,7 @@
     #btn_stop{
       font-family: khmer moul;
       position: relative;
-      top: 290px;
+      top: 380px;
       left: 400px;
       z-index: 1;
       height: 50px;
@@ -60,20 +60,19 @@
     #btn_reset{
       font-family: khmer moul;
       position: relative;
-      top: 290px;
+      top: 380px;
       left: 411px;
       z-index: 1;
       height: 50px;
     }
-    #phone{
-      font-size: 60px;
+    #phone {
+    font-size: 88px;
     position: absolute;
-    top: 188px;
+    top: 244px;
     z-index: 1;
-    left: 407px;
+    left: 311px;
     font-weight: bold;
-      
-    }
+}
     #title{
       text-align: center;
     font-size: 40px;
@@ -198,7 +197,7 @@ if it's not present, don't show loader */
   <div class="row">
     <div class="col-sm-12">
        <!-- <img style="height: 629px;width:355px;position: relative;bottom: -86px;left: -65px"  src="<?=base_url("")?>/dist/img/phone_random.png"> -->
-       <label id="phone" >000000000</label> 
+       <label id="phone" >0000000000</label> 
        <button   class="btn btn-primary" id="btn_start"><i class="fa fa-pause" aria-hidden="true"></i> ចាប់ផ្ដើម</button>
        <button   class="btn btn-danger" id="btn_stop"><i class="fa fa-play" aria-hidden="true"></i> បញ្ឈប់</button>
        <button   class="btn btn-danger" id="btn_reset"><i class="fa fa-repeat" aria-hidden="true"></i> ឡើងវិញ</button>
