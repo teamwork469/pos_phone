@@ -68,7 +68,7 @@
     #phone {
     font-size: 88px;
     position: absolute;
-    top: 244px;
+    top: 261px;
     z-index: 1;
     left: 311px;
     font-weight: bold;
