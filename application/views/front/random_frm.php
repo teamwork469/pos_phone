@@ -302,7 +302,7 @@ if it's not present, don't show loader */
         
         $("#btn_reset").on('click',function(e){
            e.preventDefault();
-           $('#phone').text('000000000');
+           $('#phone').text('0000000000');
            list_winer();
         });
 
