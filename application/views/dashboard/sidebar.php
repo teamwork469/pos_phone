@@ -39,7 +39,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="<?=site_url('Userlogin')?>" class="nav-link">
             <i class="fa fa-sign-out" aria-hidden="true"></i>
               <p>Logout</p>
             </a>
